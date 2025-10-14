@@ -208,7 +208,7 @@ html {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .project-card {
@@ -218,6 +218,7 @@ html {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  margin-bottom: 1.5rem; /* Adds vertical spacing between rows */
 }
 
 .project-card:hover {
@@ -368,7 +369,7 @@ html {
   color: #f5f3f0;
   padding: 2rem 0;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 0;
 }
 
 .footer-content {
@@ -419,13 +420,19 @@ html {
 .contact-section {
   background-color: white;
 }
+/* Reduce vertical gap for the contact section so it doesn't force a full viewport height */
+.contact-section {
+  min-height: auto; /* don't force 100vh */
+  padding-top: 80px; /* slightly smaller than other sections */
+  padding-bottom: 1.5rem; /* keep footer close */
+}
 
 .contact-intro {
   padding: 1.5rem 1rem;
 }
 
 .contact-intro .lead {
-  font-size: 1.125rem;
+  font-size: 1.525rem;
   color: #4a4a4a;
   line-height: 1.7;
 }
