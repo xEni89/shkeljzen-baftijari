@@ -20,8 +20,8 @@
   if (!el) return;
 
   const phrases = [
-    'Software Developer',
-    'C#/.NET Programmer',
+    'Software Developer (Mid-Level)',
+    'C#/.NET & PHP Programmer',
     'Problem Solver',
     'Tech Enthusiast',
     'Lifelong Learner' 
